@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(243, 240, 237);
+}
+.inter-normal {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* Banner */
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 2, 17, 1),
+      rgba(7, 2, 17, 0)
+    ),
+    url(../assets/banner-1.jpg);
+  height: 810px;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.h-banner {
+  padding-top: 177px;
+  align-items: center;
+  text-align: center;
+}
+.h-title {
+  font-size: 5rem;
+  color: white;
+}
+.header-title {
+  font-size: 3rem;
+  color: white;
+  padding: 50px;
+}
+
+/* Month Design */
+.month-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* calender Style */
+.calendar-container {
+  margin: 50px;
+  width: 502px;
+  height: 497px;
+  border-radius: 16px;
+  padding: 30px;
+  background-color: white;
+  align-items: center;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 64px);
+  grid-template-rows: repeat(6, 64px);
+  justify-content: center;
+}
+.date {
+  border: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: antiquewhite;
+}
+.date:hover {
+  background-color: #3547e9;
+  color: white;
+}
+
+/* Footer Style */
+/*
+footer {
+  background-color: #070211;
+  height: 609px;
+  margin: 0 auto;
+}
+.footer-content {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.footer-address {
+  display: flex;
+  gap: 559px;
+  height: 80px;
+  margin: 0 auto;
+  align-items: center;
+}
+.address-content {
+  color: white;
+  font-size: 24px;
+  width: 375px;
+}
+.f-a-c {
+  width: 235px;
+  padding: 0;
+  margin: 0;
+}
+footer hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15); 
+  margin: 50px 0;
+}
+.content-link {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.footre-copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-co {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.f-co a {
+  color: white;
+  text-decoration: none;
+}
+*/
+/* Media Query */
+@media screen and (max-width: 768px) {
+  header {
+    background-image: linear-gradient(
+        to right,
+        rgba(7, 2, 17, 1),
+        rgba(7, 2, 17, 0)
+      ),
+      url(../assets/banner-1.jpg);
+    height: 431px;
+    max-width: 768px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .h-banner {
+    padding-top: 130px;
+  }
+  .h-title {
+    font-size: 3rem;
+    color: white;
+  }
+  .header-title {
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
+  }
+
+  .month-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center center;
+    margin: 0 auto;
+  }
+}
